@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Text,View,Image,SafeAreaView,ImageBackground} from 'react-native';
+import Welcome from './Welcome';
 export default function App() {
+ console.log('heya')
+ let x=1
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+        <Welcome/>
     </View>
   );
 }
@@ -13,8 +14,17 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: 'dodgerblue',
+    // alignItems:'center',
+    // justifyContent:'center'
+  },
+  image: {
+    flex: 1,
+    justifyContent: "center"
+  },
+  text:{
+    fontSize:30,
+    color:'white',
+    fontWeight:'700',
   },
 });
